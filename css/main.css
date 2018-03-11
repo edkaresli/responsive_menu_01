@@ -1,0 +1,116 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body 
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.top-section
+{
+    color: #ffffff;
+    background-color: rgb(5, 16, 87);
+}
+
+@media only screen and (max-width: 768px)
+{
+
+    #menu
+    {         
+        list-style-type: none;
+        transition: height 1s;
+        background-color: #091b55;
+    }    
+    
+    #menu li 
+    {
+        display: inherit;
+        border: 1px solid #666666;
+        padding: 5px;
+    }
+
+    #menu li a 
+    {
+        text-decoration: none;
+        color: rgb(185, 106, 3);               
+        display: block;
+        font-size: 18px;
+    }
+
+    .menuShow 
+    {
+        display: block;
+        height: auto;
+        transition: height 1s; 
+    }
+    
+    .menuShow a:active 
+    {
+       color: #fff;         
+    }
+    
+    .menuCurrent
+    {
+        color: rgb(238, 215, 87);
+        background-color: rgb(10, 59, 219);
+    }
+
+    .menuInctive
+    {
+        color: rgb(185, 106, 3);
+        background-color: #091b55;
+    }
+
+    .menuHide
+    {
+        display: none;
+        height: 0px;
+        transition: height 1s;
+    }
+
+    #clickMe
+    {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        transform: rotate(90deg);
+        cursor: pointer;         
+    }
+        
+    .clickMeBefore
+    {
+        color: #fff;
+    }
+
+    .clickMeAfter
+    {
+        color: #666666;
+    }
+
+    #clickMe::after 
+    {        
+        clear: both;
+        content: " ";
+        display: block;
+    }
+/*
+    #burger div
+    {
+        width: 35px;
+        height: 5px;                
+        background-color: #091b55;
+        margin: 6px 0;
+    }
+*/
+    .blah
+    {
+        color: #fff;
+        background-color: #777777;
+        margin: 5px;
+        padding: 2px;
+    }
+    
+}
